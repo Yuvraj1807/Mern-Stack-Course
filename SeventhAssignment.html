@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Doctor Appointment Form</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: white; margin: 40px;">
+
+    <h2 style="text-align: center; color: maroon; border-bottom: 2px solid maroon; padding-bottom: 10px;">
+        Doctor Appointment Form
+    </h2>
+
+    <table width="100%">
+        <tr>
+            <!-- Doctor Image Column -->
+            <td style="width: 40%; text-align: center;">
+                <img src="doctor.jpg" alt="Doctor Image" style="width: 80%; height: auto;">
+            </td>
+
+            <!-- Form Column -->
+            <td style="width: 60%;">
+                <form>
+                    <!-- Appointment Date -->
+                    <label for="date">Appointment Date</label><br>
+                    <input type="date" id="date" name="date"><br><br>
+
+                    <!-- Appointment Time -->
+                    <label for="time">Appointment Time</label><br>
+                    <input type="time" id="time" name="time"><br><br>
+
+                    <!-- Name -->
+                    <label for="fname">Name</label><br>
+                    <input type="text" id="fname" placeholder="First">
+                    <input type="text" placeholder="Last"><br><br>
+
+                    <!-- Gender -->
+                    <label>Gender</label><br>
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female<br><br>
+
+                    <!-- Phone -->
+                    <label for="phone">Phone</label><br>
+                    <input type="tel" id="phone" name="phone" placeholder="#####"><br><br>
+
+                    <!-- Address -->
+                    <label for="address">Address</label><br>
+                    <input type="text" placeholder="City">
+                    <input type="text" placeholder="State"><br><br>
+
+                    <!-- Query -->
+                    <label for="query">Your Query</label><br>
+                    <textarea rows="4" cols="40" id="query" name="query"></textarea><br><br>
+
+                    <!-- Appointment Type -->
+                    <label>Appointment Type</label><br>
+                    <p>Select which appointment type(s) you require</p>
+                    <input type="checkbox" name="appt" value="cervix"> Cervix checkup<br>
+                    <input type="checkbox" name="appt" value="heart"> Heart checkup<br>
+                    <input type="checkbox" name="appt" value="eye"> Eye check-up<br>
+                    <input type="checkbox" name="appt" value="hearing"> Hearing Test<br><br>
+
+                    <!-- Submit -->
+                    <input type="submit" value="Send">
+                </form>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

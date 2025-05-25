@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pink & Black Checkerboard</title>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .board {
+      display: grid;
+      grid-template-columns: repeat(8, 60px);
+      grid-template-rows: repeat(8, 60px);
+      border: 5px solid black;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .cell {
+      width: 60px;
+      height: 60px;
+    }
+
+    .black {
+      background-color: black;
+    }
+
+    .pink {
+      background-color: pink;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="board">
+    <!-- 64 cells alternating black and pink -->
+    <!-- We'll use a bit of scripting (copy-paste style) to alternate colors -->
+    <!-- Even rows: start with black -->
+    <!-- Odd rows: start with pink -->
+
+    <!-- Use this loop pattern to fill the board -->
+    <!-- You can generate this with JavaScript or manually copy the pattern below -->
+
+    <!-- Row 1 (even row, starts with black) -->
+    <div class="cell black"></div>
+    <div class="cell pink"></div>
+    <div class="cell black"></div>
+    <div class="cell pink"></div>
+    <div class="cell black"></div>
+    <div class="cell pink"></div>
+    <div class="cell black"></div>
+    <div class="cell pink"></div>
+
+    <!-- Row 2 -->
+    <div class="cell pink"></div>
+    <div class="cell black"></div>
+    <div class="cell pink"></div>
+    <div class="cell black"></div>
+    <div class="cell pink"></div>
+    <div class="cell black"></div>
+    <div class="cell pink"></div>
+    <div class="cell black"></div>
+
+    <!-- Repeat 6 more times (alternate starting cell each row) -->
+    <div class="cell black"></div>
+    <div class="cell pink"></div>
+    <div class="cell black"></div>
+    <div class="cell pink"></div>
+    <div class="cell black"></div>
+    <div class="cell pink"></div>
+    <div class="cell black"></div>
+    <div class="cell pink"></div>
+
+    <div class="cell pink"></div>
+    <div class="cell black"></div>
+    <div class="cell pink"></div>
+    <div class="cell black"></div>
+    <div class="cell pink"></div>
+    <div class="cell black"></div>
+    <div class="cell pink"></div>
+    <div class="cell black"></div>
+
+    <div class="cell black"></div>
+    <div class="cell pink"></div>
+    <div class="cell black"></div>
+    <div class="cell pink"></div>
+    <div class="cell black"></div>
+    <div class="cell pink"></div>
+    <div class="cell black"></div>
+    <div class="cell pink"></div>
+
+    <div class="cell pink"></div>
+    <div class="cell black"></div>
+    <div class="cell pink"></div>
+    <div class="cell black"></div>
+    <div class="cell pink"></div>
+    <div class="cell black"></div>
+    <div class="cell pink"></div>
+    <div class="cell black"></div>
+
+    <div class="cell black"></div>
+    <div class="cell pink"></div>
+    <div class="cell black"></div>
+    <div class="cell pink"></div>
+    <div class="cell black"></div>
+    <div class="cell pink"></div>
+    <div class="cell black"></div>
+    <div class="cell pink"></div>
+
+    <div class="cell pink"></div>
+    <div class="cell black"></div>
+    <div class="cell pink"></div>
+    <div class="cell black"></div>
+    <div class="cell pink"></div>
+    <div class="cell black"></div>
+    <div class="cell pink"></div>
+    <div class="cell black"></div>
+  </div>
+
+</body>
+</html>

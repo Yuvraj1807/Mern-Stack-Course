@@ -1,2 +1,3 @@
 # Mern-Stack-Course
-For the ethnus Mern course assignments.
+Hi, This is Yuvraj. 
+The repository is for the Ethnus Mern Stack Course and its assignments. 

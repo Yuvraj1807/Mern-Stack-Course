@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>School Dashboard</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    /* Top Navbar */
+    .navbar {
+      background-color: #0b1c33;
+      color: white;
+      padding: 12px 20px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .container {
+      display: flex;
+      flex: 1;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 220px;
+      background: linear-gradient(to bottom right, #49c95f, #90ee90);
+      color: white;
+      padding: 20px;
+    }
+
+    .sidebar h2 {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: white;
+    }
+
+    .sidebar a {
+      display: block;
+      padding: 10px;
+      background-color: rgba(255, 255, 255, 0.3);
+      margin-bottom: 10px;
+      border-radius: 5px;
+      color: white;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .sidebar a:hover {
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    /* Main content */
+    .main {
+      flex: 1;
+      background-color: #f3f4f6;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .main h1 {
+      color: #33aa33;
+      margin-bottom: 30px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .card h3 {
+      font-size: 18px;
+      color: #444;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 24px;
+      font-weight: bold;
+      color: #33aa33;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">Ethnus - MERN Full Stack Internship Training</div>
+
+  <div class="container">
+    <div class="sidebar">
+      <h2>School Dashboard</h2>
+      <a href="#">Dashboard</a>
+      <a href="#">Students</a>
+      <a href="#">Teachers</a>
+      <a href="#">Classes</a>
+      <a href="#">Exams</a>
+      <a href="#">Library</a>
+      <a href="#">Settings</a>
+    </div>
+
+    <div class="main">
+      <h1>Welcome to the School Dashboard</h1>
+      <div class="cards">
+        <div class="card">
+          <h3>Total Students</h3>
+          <p>500</p>
+        </div>
+        <div class="card">
+          <h3>Total Teachers</h3>
+          <p>50</p>
+        </div>
+        <div class="card">
+          <h3>Classes</h3>
+          <p>20</p>
+        </div>
+        <div class="card">
+          <h3>Upcoming Exams</h3>
+          <p>5</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

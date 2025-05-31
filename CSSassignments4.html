@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food List Task</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 40px;
+            background-color: #f8f9fa;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+
+        .food-list {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            min-width: 300px;
+        }
+
+        .food-item {
+            display: flex;
+            align-items: center;
+            padding: 12px 0;
+            font-size: 18px;
+            color: #333;
+            border-bottom: 1px solid #eee;
+        }
+
+        .food-item:last-child {
+            border-bottom: none;
+        }
+
+        .star {
+            color: #f44336;
+            font-size: 20px;
+            margin-right: 15px;
+            font-weight: bold;
+        }
+
+        .food-name {
+            font-weight: 500;
+        }
+
+       
+        .shape:nth-child(1) { background-color: #4caf50; }
+        .shape:nth-child(2) { background-color: #4caf50; opacity: 0.8; }
+        .shape:nth-child(3) { background-color: #2196f3; }
+        .shape:nth-child(4) { background-color: #2196f3; opacity: 0.8; }
+        .shape:nth-child(5) { background-color: #673ab7; }
+        .shape:nth-child(6) { background-color: #673ab7; opacity: 0.8; }
+        .shape:nth-child(7) { background-color: #e91e63; }
+        .shape:nth-child(8) { background-color: #e91e63; opacity: 0.8; }
+
+        .shape-row {
+            display: flex;
+            gap: 5px;
+            margin-bottom: 5px;
+        }
+
+        
+    </style>
+</head>
+<body>
+   
+
+    <div class="food-list">
+        <div class="food-item">
+            <span class="star">★</span>
+            <span class="food-name">Hummus</span>
+        </div>
+        <div class="food-item">
+            <span class="star">★</span>
+            <span class="food-name">Pita</span>
+        </div>
+        <div class="food-item">
+            <span class="star">★</span>
+            <span class="food-name">Green salad</span>
+        </div>
+        <div class="food-item">
+            <span class="star">★</span>
+            <span class="food-name">Halloumi</span>
+        </div>
+    </div>
+
+    <div class="decorative-shapes">
+        <div class="shape-row">
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+        <div class="shape-row">
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+        <div class="shape-row">
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+        <div class="shape-row">
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+    </div>
+</body>
+</html>

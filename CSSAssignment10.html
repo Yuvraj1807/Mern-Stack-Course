@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Calculator</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .calculator {
+      background-color: #4d4d4d;
+      border: 4px solid #333;
+      border-radius: 10px;
+      padding: 15px;
+      width: 300px;
+    }
+
+    .display {
+      background-color: white;
+      height: 60px;
+      font-size: 28px;
+      padding: 10px;
+      border-radius: 5px;
+      text-align: right;
+      overflow: hidden;
+      margin-bottom: 15px;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    .buttons button {
+      background-color: #33cccc;
+      border: none;
+      padding: 20px;
+      font-size: 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 0 4px #2ba5a5;
+      transition: transform 0.1s;
+    }
+
+    .buttons button:active {
+      transform: scale(0.95);
+      box-shadow: 0 2px #2ba5a5;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="calculator">
+    <div class="display" id="display">0</div>
+    <div class="buttons">
+      <button>C</button>
+      <button>%</button>
+      <button>/</button>
+      <button>*</button>
+
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button>-</button>
+
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button>+</button>
+
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>=</button>
+
+      <button>00</button>
+      <button>0</button>
+      <button>.</button>
+      <button>=</button>
+    </div>
+  </div>
+
+</body>
+</html>

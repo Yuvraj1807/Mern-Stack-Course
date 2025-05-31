@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Window</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1350&q=80') no-repeat center center;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-box {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 40px;
+      width: 350px;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+      text-align: center;
+    }
+
+    .avatar {
+      width: 100px;
+      height: 100px;
+      background: #f75c9d;
+      border-radius: 50%;
+      margin: 0 auto 20px;
+      background-image: url('https://cdn-icons-png.flaticon.com/512/3135/3135715.png');
+      background-size: 60%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .login-box h2 {
+      color: white;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+
+    .login-box input[type="email"],
+    .login-box input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: none;
+      border-bottom: 2px solid #ccc;
+      background: transparent;
+      color: white;
+      font-size: 14px;
+    }
+
+    ::placeholder {
+      color: #ddd;
+    }
+
+    .checkbox {
+      margin-bottom: 20px;
+      font-size: 13px;
+      color: white;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      justify-content: left;
+    }
+
+    .checkbox a {
+      color: #00f;
+      text-decoration: none;
+    }
+
+    .login-box button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      background-color: #28a745;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .login-box button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-box">
+    <div class="avatar"></div>
+    <h2>LOGIN WINDOW</h2>
+    <form>
+      <input type="email" placeholder="Your Email Address" required>
+      <input type="password" placeholder="Your Password" required>
+
+      <div class="checkbox">
+        <input type="checkbox" id="agree" required>
+        <label for="agree">Agree With <a href="#">Terms & Condition</a></label>
+      </div>
+
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+</body>
+</html>
